@@ -1,0 +1,29 @@
+.pkm-detailview-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfd4fc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(172, 75, 194, 0.7);
+    padding: 20px;
+    margin: 20px;
+}
+
+.pkm-detailview-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pkm-detailview-header span, h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #786a96;
+    filter: drop-shadow(0 0 8px rgba(127, 114, 114, 0.75));
+}

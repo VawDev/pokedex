@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Api Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detail_view/detail_view.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="single_pkm.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="templates.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="global_var.js" defer></script>
+    <script src="detail_view/pkm_detailview.js" defer></script>
+    <script src="api_utility.js" defer></script>
+    <link rel="icon" href="./assets/pokepng.png">
+</head>
+
+<body onload="init()">
+    <header>
+        <div class="header-inner">
+            <div class="header-container">
+                <img src="./assets/pokeball.png" alt="Pokedex Logo">
+                <h1>Pokedex</h1>
+            </div>
+            <div class="search-container">
+                <img src="./assets/pokepng.png" alt="Pokedex Logo" onclick="toggleMelody()">
+                <input id="pokemonSearch" type="text" placeholder="Search for a pokemon" onkeyup="searchPokemon()">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="pokemon-list">
+
+
+            <div class="pkm-detailview-container">
+                    <div class="pkm-detailview-header">
+                        <span>#7</span>
+                        <h3>Pokemon Name</h3>
+                    </div>
+                    <img src="###api_image_url###" alt="">
+                    </div>
+                    <div class="pkm-detail-footer">
+                        <img src="" alt="" class="type-symbol">
+                        <img src="" alt="" class="type-symbol">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-container">
+                <div class="footer-buttons-container">
+                    <button id="loadMore">Load more</button>
+                    <button id="goToTop">Go to top</button>
+                    <button id="clearSearch">Clear search</button>
+                </div>
+                <p>© 2026 Pokedex. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
