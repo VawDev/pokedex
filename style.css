@@ -161,3 +161,32 @@ button:active{
     gap: 10px;
     margin-bottom: 8px;
   }
+
+
+  #loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+  }
+
+  #loading img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+
+  .pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }

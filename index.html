@@ -31,32 +31,22 @@
             </div>
         </div>
     </header>
+
+
+    <div id="loading" class="hidden">
+        <img src="./assets/loading.gif" alt="Loading...">
+    </div>
+
+
     <main>
-        <div class="pokemon-list">
-
-
-            <div class="pkm-detailview-container">
-                    <div class="pkm-detailview-header">
-                        <span>#7</span>
-                        <h3>Pokemon Name</h3>
-                    </div>
-                    <img src="###api_image_url###" alt="">
-                    </div>
-                    <div class="pkm-detail-footer">
-                        <img src="" alt="" class="type-symbol">
-                        <img src="" alt="" class="type-symbol">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </main>
+        <div class="pokemon-list" id="pokemon-list"></div>
+    </main>
     <footer>
         <div class="footer-inner">
             <div class="footer-container">
                 <div class="footer-buttons-container">
-                    <button id="loadMore">Load more</button>
-                    <button id="goToTop">Go to top</button>
+                    <button id="loadMore" onclick="loadMore()">Load more</button>
+                    <button id="goToTop" onclick="goToTop()">Go to top</button>
                     <button id="clearSearch">Clear search</button>
                 </div>
                 <p>© 2026 Pokedex. All rights reserved.</p>
